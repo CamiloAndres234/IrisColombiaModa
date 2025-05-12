@@ -1,0 +1,153 @@
+/*Diseño de toda la pagina*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff1fa;
+}
+
+/*Diseño del menú de navegación*/
+header {
+  background-color:#6e428f;
+  color: white;
+  padding: 10px 0;
+}
+
+/*Interior menú de navegación*/
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.top-bar nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/*Ajuste de logo en la barra de navegación*/
+.logo{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.logo-img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.nombre-marca{
+  top:15px;
+  left: 109x;
+  position: absolute;
+}
+
+/*Diseño menú secundario de la pantalla de inicio*/
+.hero {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #a55eb2;
+}
+
+/*Botón "Ver catalogo*/
+.hero button {
+  background-color: #ff94c2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold; /*Letra en negrilla*/
+}
+
+/*Diseño de la sección del catalogo*/
+.catalogo {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/*Recuadros de las imagenes*/
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/*Contorno categoria*/
+.categoria {
+  width: 150px;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/*Imagenes de los catalogos*/
+.imagen {
+  background-color: #ccc;
+  height: 100px;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+/*Diseño de pie de pagina*/
+/*Fondo del pie de pagina*/
+footer {
+  background-color: #6e428f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+footer input {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+footer button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  background-color: #ff94c2;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+footer h4 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+footer .MenuF{
+  font-size: 14px;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Estilo de los iconos de las redes*/
+footer .icon {
+  color: #ff94c2;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 50px;
+  font-size:20px;/*tamaño de las letra*/
+  line-height: 1.6;/*Interlineado*/
+}
