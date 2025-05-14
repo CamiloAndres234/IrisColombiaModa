@@ -46,17 +46,10 @@ header {
   position: absolute;
 }
 
-/*Diseño menú secundario de la pantalla de inicio*/
-/*Apartado que se ajusta al contenido de la pagina*/
-.hero {
-  text-align: center;
-  padding: 30px 20px;
-  background-color: #a55eb2;
-}
+/*Botón en menú de busqueda*/
 
-/*Botón "Ver catalogo*/
-.hero button {
-  background-color: #ff94c2;
+.catalogo{
+    background-color: #ff94c2;
   border: none;
   padding: 10px 20px;
   border-radius: 50px;
@@ -65,35 +58,88 @@ header {
   font-weight: bold; /*Letra en negrilla*/
 }
 
-/*Diseño de la sección del catalogo*/
-.catalogo {
+/*Estilo del interios de contenido de la pagina "Servicio"*/
+/*Apartado que se ajusta al contenido de la pagina*/
+.servicios {
+  background-color: #fcecf5;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
   text-align: center;
-  padding: 30px 20px;
 }
 
-/*Recuadros de las imagenes*/
-.categorias {
+.titulo-principal {
+  font-size: 24px;
+  color: #6a1b9a;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.galeria-servicios {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-/*Contorno categoria*/
-.categoria {
-  width: 150px;
-  background-color: #f2f2f2;
-  padding: 15px;
+.imagen-servicio {
+  width: 100px;
+  height: 130px;
+  background-color: #c9b5d4;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #fff;
 }
 
-/*Imagenes de los catalogos*/
-.imagen {
-  background-color: #ccc;
-  height: 100px;
-  line-height: 100px;
-  font-weight: bold;
+.separador {
+  border: 1px solid #6a1b9a;
+  margin: 30px auto;
+  width: 90%;
 }
+
+.bloque-servicio {
+  margin-bottom: 30px;
+}
+
+.titulo-seccion {
+  font-size: 20px;
+  font-style: italic;
+  color: #6a1b9a;
+  margin-bottom: 15px;
+}
+
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contenido p {
+  max-width: 350px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.imagen-redonda {
+  width: 90px;
+  height: 90px;
+  background-color: #c9b5d4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #fff;
+}
+
+
 
 /*Diseño de pie de pagina*/
 /*Fondo del pie de pagina*/
@@ -146,6 +192,7 @@ footer .MenuF a{
   text-decoration: none;
   color: white;
 }
+
 
 copyright {
   text-align: center;

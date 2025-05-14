@@ -46,53 +46,37 @@ header {
   position: absolute;
 }
 
-/*Diseño menú secundario de la pantalla de inicio*/
+/*Diseño del contenido de la pagina "Terminos y condiciones"*/
 /*Apartado que se ajusta al contenido de la pagina*/
-.hero {
+.TyC {
+  background-color: #fceafa; /* fondo claro suave */
+  padding: 40px 20px;
   text-align: center;
-  padding: 30px 20px;
-  background-color: #a55eb2;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-/*Botón "Ver catalogo*/
-.hero button {
-  background-color: #ff94c2;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 50px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold; /*Letra en negrilla*/
-}
-
-/*Diseño de la sección del catalogo*/
-.catalogo {
-  text-align: center;
-  padding: 30px 20px;
-}
-
-/*Recuadros de las imagenes*/
-.categorias {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/*Contorno categoria*/
-.categoria {
-  width: 150px;
-  background-color: #f2f2f2;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-/*Imagenes de los catalogos*/
-.imagen {
-  background-color: #ccc;
-  height: 100px;
-  line-height: 100px;
+.titulo-TyC {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  color: #6b2c91;
   font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.TyC p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gracias {
+  font-weight: bold;
+  font-size: 18px;
+  color: #6b2c91;
 }
 
 /*Diseño de pie de pagina*/

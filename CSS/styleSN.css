@@ -46,17 +46,10 @@ header {
   position: absolute;
 }
 
-/*Diseño menú secundario de la pantalla de inicio*/
-/*Apartado que se ajusta al contenido de la pagina*/
-.hero {
-  text-align: center;
-  padding: 30px 20px;
-  background-color: #a55eb2;
-}
+/*Botón en menú de busqueda*/
 
-/*Botón "Ver catalogo*/
-.hero button {
-  background-color: #ff94c2;
+.catalogo{
+    background-color: #ff94c2;
   border: none;
   padding: 10px 20px;
   border-radius: 50px;
@@ -65,34 +58,95 @@ header {
   font-weight: bold; /*Letra en negrilla*/
 }
 
-/*Diseño de la sección del catalogo*/
-.catalogo {
-  text-align: center;
-  padding: 30px 20px;
+/*Estilo del interios de contenido de la pagina "Sobre Nosotros"*/
+/*Apartado que se ajusta al contenido de la pagina*/
+.historia {
+  background-color: #fcecf5;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
 }
 
-/*Recuadros de las imagenes*/
-.categorias {
+.intro {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
-/*Contorno categoria*/
-.categoria {
-  width: 150px;
-  background-color: #f2f2f2;
-  padding: 15px;
-  border-radius: 10px;
+.intro img {
+  width: 140px;
+  height: 140px;
+  border-radius: 15px;
+  background-color: #ccc;
 }
 
-/*Imagenes de los catalogos*/
-.imagen {
-  background-color: #ccc;
-  height: 100px;
-  line-height: 100px;
+.texto-intro {
+  max-width: 300px;
+  text-align: left;
+}
+
+.texto-intro p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.linea {
+  border: none;
+  border-bottom: 2px solid #6a1b9a;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.frase {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.frase h3 {
+  font-size: 22px;
+  color: #6a1b9a;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.frase h2 {
+  font-size: 26px;
   font-weight: bold;
+  color: #333;
+}
+
+.separador {
+  border: 1px solid #6a1b9a;
+  margin: 40px auto;
+  width: 90%;
+}
+
+.imagenes-texto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.columna {
+  text-align: center;
+}
+
+.columna img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-bottom: 10px;
+}
+
+.columna h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
 }
 
 /*Diseño de pie de pagina*/

@@ -46,54 +46,83 @@ header {
   position: absolute;
 }
 
-/*Diseño menú secundario de la pantalla de inicio*/
+/*Diseño del contenido de la pagina "reembolso"*/
 /*Apartado que se ajusta al contenido de la pagina*/
-.hero {
+.trabaja {
+  background-color: #fceafa;
+  padding: 40px 20px;
   text-align: center;
-  padding: 30px 20px;
-  background-color: #a55eb2;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-/*Botón "Ver catalogo*/
-.hero button {
-  background-color: #ff94c2;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 50px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold; /*Letra en negrilla*/
+.titulo-principal {
+  color: #6b2c91;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-/*Diseño de la sección del catalogo*/
-.catalogo {
-  text-align: center;
-  padding: 30px 20px;
+.subtitulo {
+  color: #6b2c91;
+  font-size: 22px;
+  margin: 30px 0 10px 0;
 }
 
-/*Recuadros de las imagenes*/
-.categorias {
+.intro-trabajo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.img-empresa {
+  background-color: #d6cfe0;
+  width: 160px;
+  height: 80px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  color: #555;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.vacantes {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
-  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 20px auto;
 }
 
-/*Contorno categoria*/
-.categoria {
-  width: 150px;
-  background-color: #f2f2f2;
-  padding: 15px;
+.vacante {
+  background-color: #f6f0fa;
+  border: 1px solid #ccc;
   border-radius: 10px;
+  padding: 15px;
+  text-align: left;
 }
 
-/*Imagenes de los catalogos*/
-.imagen {
-  background-color: #ccc;
-  height: 100px;
-  line-height: 100px;
-  font-weight: bold;
+.vacante h4 {
+  color: #6b2c91;
+  margin-bottom: 5px;
 }
+
+.final {
+  margin-top: 30px;
+  font-weight: bold;
+  color: #6b2c91;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #6b2c91;
+  margin: 30px auto;
+  width: 80%;
+}
+
 
 /*Diseño de pie de pagina*/
 /*Fondo del pie de pagina*/
