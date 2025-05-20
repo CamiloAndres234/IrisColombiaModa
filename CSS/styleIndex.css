@@ -72,9 +72,9 @@ header {
 }
 
 .catalogo h3 {
-  width: 100%;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #6e428f;
 }
 
 /* Contenedor de todas las categorías */
@@ -88,18 +88,27 @@ header {
 /* Tarjeta individual de categoría */
 .categoria {
   background-color: #f2f2f2;
-  border-radius: 10px;
-  padding: 15px;
+  border-radius: 15px;
+  padding: 20px;
   width: 250px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .categoria:hover {
   transform: scale(1.05);
 }
 
-/* Imagen dentro de cada categoría */
+/* Título encima de cada imagen */
+.categoria .imagen p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #6e428f;
+}
+
+/* Imagen del catálogo */
 .imagen img {
   width: 100%;
   height: auto;
@@ -112,14 +121,14 @@ header {
   border: 4px solid #333;
 }
 
-/* Texto debajo de la imagen */
-.categoria p {
-  margin-top: 10px;
+/* Descripción debajo de la imagen */
+.categoria p:not(.imagen p) {
+  margin-top: 15px;
   font-size: 16px;
   color: #333;
 }
 
-/* RESPONSIVE - para pantallas pequeñas */
+/* RESPONSIVE: en pantallas pequeñas, apilar las tarjetas */
 @media (max-width: 600px) {
   .categorias {
     flex-direction: column;
