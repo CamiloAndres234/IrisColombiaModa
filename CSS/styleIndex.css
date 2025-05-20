@@ -69,6 +69,8 @@ header {
 .catalogo {
   text-align: center;
   padding: 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*Recuadros de las imagenes*/
