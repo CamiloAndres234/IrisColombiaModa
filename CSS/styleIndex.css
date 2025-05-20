@@ -65,6 +65,13 @@ header {
   font-weight: bold; /*Letra en negrilla*/
 }
 
+/*Linea de division de la pagina*/
+hr {
+  border: none;
+  border-top: 2px solid #6b2c91;
+  margin: 30px auto;
+  width: 80%;
+}
 /* Contenedor general de catálogo */
 .catalogo {
   padding: 40px 20px;
@@ -118,8 +125,9 @@ header {
 }
 
 .imagen img:hover {
-  border: 4px solid #333;
+  border: 4px solid #6e428f; /* Color morado */
 }
+
 
 /* Descripción debajo de la imagen */
 .categoria p:not(.imagen p) {
