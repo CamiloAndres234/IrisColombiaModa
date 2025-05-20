@@ -65,43 +65,70 @@ header {
   font-weight: bold; /*Letra en negrilla*/
 }
 
-/*Diseño de la sección del catalogo*/
+/* Contenedor general de catálogo */
 .catalogo {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-/*Recuadros de las imagenes*/
+.catalogo h3 {
+  width: 100%;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de todas las categorías */
 .categorias {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
 }
 
-/*Contorno categoria*/
+/* Tarjeta individual de categoría */
 .categoria {
-  width: 250px;
   background-color: #f2f2f2;
-  padding: 15px;
   border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-/*Imagenes de los catalogos*/
-.imagen img{
-  background-color: #ccc;
-  height: 300px;
-  line-height: 100px;
-  font-weight: bold;
+.categoria:hover {
+  transform: scale(1.05);
+}
+
+/* Imagen dentro de cada categoría */
+.imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: border 0.3s ease;
 }
 
 .imagen img:hover {
-
   border: 4px solid #333;
+}
+
+/* Texto debajo de la imagen */
+.categoria p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* RESPONSIVE - para pantallas pequeñas */
+@media (max-width: 600px) {
+  .categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categoria {
+    width: 90%;
+  }
 }
 
 /*Diseño de pie de pagina*/
