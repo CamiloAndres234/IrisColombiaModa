@@ -67,18 +67,20 @@ header {
 
 /*Diseño de la sección del catalogo*/
 .catalogo {
-  text-align: center;
-  padding: 30px 20px;
   display: flex;
+  justify-content: center;
+  gap: 30px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 /*Recuadros de las imagenes*/
 .categorias {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 30px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 /*Contorno categoria*/
