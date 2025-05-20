@@ -8,27 +8,3 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("¡Correo enviado correctamente!");
         }
     });
-
-    // **Despliegue dinámico de contenido**
-    document.getElementById("boton").addEventListener("click", function() {
-        const nuevoElemento = document.createElement("p");
-        nuevoElemento.textContent = "¡Nuevo contenido agregado!";
-        document.getElementById("contenedor").appendChild(nuevoElemento);
-    });
-
-    // **Slider de imágenes**
-    let slides = document.querySelectorAll(".slide");
-    let index = 0;
-
-    setInterval(() => {
-        slides.forEach(slide => slide.classList.remove("active"));
-        index = (index + 1) % slides.length;
-        slides[index].classList.add("active");
-    }, 3000);
-
-    // **Contador de visitas**
-    let contador = localStorage.getItem("visitas") || 0;
-    contador++;
-    localStorage.setItem("visitas", contador);
-    document.getElementById("contador").textContent = contador;
-});
