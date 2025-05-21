@@ -178,6 +178,7 @@ footer .icon {
     border-radius: 10px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
     text-align: center;
+    color: black; /* Cambia el color del texto a negro */
 }
 
 /* Lista de productos en el carrito */
@@ -196,6 +197,7 @@ footer .icon {
     background: white;
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    color: black; /* Asegura que el texto de los productos sea negro */
 }
 
 /* Botón eliminar */
