@@ -49,6 +49,18 @@ header {
 /*Botón en menú de busqueda*/
 
 .catalogo{
+  background-color: #ff94c2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold; /*Letra en negrilla*/
+}
+
+/*Botón en menú de busqueda*/
+
+.catalogo{
     background-color: #ff94c2;
   border: none;
   padding: 10px 20px;

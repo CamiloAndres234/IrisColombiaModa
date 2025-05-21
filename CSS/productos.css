@@ -48,13 +48,6 @@ header {
 
 /*Diseño del contenido de la pagina "productos"*/
 /*Apartado que se ajusta al contenido de la pagina*/
-.Filas {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
 .productos {
   background-color: #fceafa; /* fondo claro suave */
   padding: 40px 20px;
@@ -64,39 +57,48 @@ header {
 }
 
 .titulo-productos {
-  font-family: Arial, sans-serif;
   font-size: 28px;
   color: #6b2c91;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.Filas {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .producto {
-  width: 300px;
-  background-color: #f2f2f2;
+  width: 260px;
+  background-color: #fff;
   padding: 15px;
-  border: 4px;
+  border: 3px solid #d8b8ec;
   border-radius: 10px;
+  transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
 
-.producto :hover {
-
-    border:4px solid #333;
+.producto:hover {
+  border: 3px solid #6b2c91;
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(107, 44, 145, 0.3);
 }
 
 .producto img {
-
-    background-color: #ccc;
-  height: 400px;
-  line-height: 100px;
-  font-weight: bold;
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-.gracias {
+.producto p {
   font-weight: bold;
-  font-size: 18px;
+  margin: 10px 0;
   color: #6b2c91;
 }
+
 
 /*Diseño de pie de pagina*/
 /*Fondo del pie de pagina*/
