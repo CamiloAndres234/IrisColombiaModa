@@ -24,33 +24,28 @@
         <a href="contacto.html">Contacto</a>
       </nav>
     </div>
-    <!--Seccion de contenido de la pagina de la pagina-->
-    <section class="productos">
-        <h2 class="titulo-productos">Blusas</h2>
-        <div class="Filas">
-            <div class="producto">
-                <p>Blusa Bibi</p>
-                <img src="IMAGENES/BlusaBibi.JPG" alt="BlusaBibi">
-            </div>
-            <div class="producto">
-                <p>Body Brisa</p>
-                <img src="IMAGENES/BlusaBrisa.JPG" alt="BlusaBrisa">
-            </div>
-            <div class="producto">
-                <p>Blusa Cloe</p>
-                <img src="IMAGENES/BlusaCloe.JPG" alt="BlusaCloe">
-            </div>
-        <div class="Filas">
-            <div class="producto">
-                <p>Body Iris</p>
-                <img src="IMAGENES/BlusaIris.JPG" alt="BlusaIris">
-            </div>
-            <div class="producto">
-                <p>Body Lina</p>
-                <img src="IMAGENES/BlusaLina.JPG" alt="BlusaLina">
-            </div>
+   <!-- Sección de productos -->
+<section class="productos">
+    <h2 class="titulo-productos">Blusas</h2>
+    <div class="Filas">
+        <div class="producto" data-nombre="Blusa Bibi" data-precio="20">
+            <p>Blusa Bibi - $20</p>
+            <img src="IMAGENES/BlusaBibi.JPG" alt="BlusaBibi">
+            <button class="agregar">Agregar al Carrito</button>
         </div>
-    </section>
+        <div class="producto" data-nombre="Body Brisa" data-precio="25">
+            <p>Body Brisa - $25</p>
+            <img src="IMAGENES/BlusaBrisa.JPG" alt="BlusaBrisa">
+            <button class="agregar">Agregar al Carrito</button>
+        </div>
+    </div>
+</section>
+
+<!-- Sección del carrito -->
+<h2>Carrito de Compras</h2>
+<ul id="carrito"></ul>
+<p>Total: $<span id="total">0</span></p>
+<button id="vaciarCarrito">Vaciar Carrito</button>
 
   <!--Sección de pie de pagina-->
   <footer>
