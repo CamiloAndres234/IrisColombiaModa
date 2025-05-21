@@ -178,7 +178,7 @@ footer .icon {
     border-radius: 10px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
     text-align: center;
-    color: black; /* Cambia el color del texto a negro */
+    color: black;
 }
 
 /* Lista de productos en el carrito */
@@ -192,12 +192,22 @@ footer .icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 12px;
     margin: 5px 0;
     background: white;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-    color: black; /* Asegura que el texto de los productos sea negro */
+    transition: 0.3s;
+    font-size: 16px; /* Tamaño del texto mejorado */
+    color: black; /* Color de texto cambiado a negro */
+}
+
+/* Imagen del producto en el carrito */
+#carrito img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
 /* Botón eliminar */
@@ -205,7 +215,7 @@ footer .icon {
     background-color: #dc3545;
     color: white;
     border: none;
-    padding: 6px 10px;
+    padding: 6px 12px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -217,7 +227,7 @@ footer .icon {
 
 /* Estilos del total */
 #total-container {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: #28a745;
     margin-top: 10px;
