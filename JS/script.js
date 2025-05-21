@@ -18,4 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-
+document.querySelectorAll("a[href^='#']").forEach(enlace => {
+    enlace.addEventListener("click", function(event) {
+        event.preventDefault(); // Evita el salto brusco
+        const destino = document.querySelector(this.getAttribute("href"));
+        destino.scrollIntoView({ behavior: "smooth" }); // Activa el desplazamiento suave
+    });
+});
